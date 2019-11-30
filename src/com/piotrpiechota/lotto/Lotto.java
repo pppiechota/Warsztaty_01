@@ -1,10 +1,10 @@
-package com.piotrpiechota;
+package com.piotrpiechota.lotto;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class SymulatorLotto {
+public class Lotto {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -26,8 +26,8 @@ public class SymulatorLotto {
         int[] results = pickSixNumbers(scan);
 
         // Sprawdzenie - wyświetlenie
-        System.out.println(Arrays.toString(generated));
-        System.out.println(Arrays.toString(results));
+//        System.out.println(Arrays.toString(generated));
+//        System.out.println(Arrays.toString(results));
 
         // Sprawdzenie i obliczenie wyników
         checkScore(results, generated);

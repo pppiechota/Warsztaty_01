@@ -1,21 +1,20 @@
-package com.piotrpiechota;
+package com.piotrpiechota.guessthenumber;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class ZgadywanieLiczb {
+public class GuessTheNumber {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random rand = new Random();
         int toGuess = rand.nextInt(100) + 1;
 
-        System.out.println(toGuess);
+//        Podgląd liczby:
+//        System.out.println(toGuess);
 
         int guess = getNumber(scanner);
-
         while (guess != toGuess) {
-
             if (guess < toGuess) {
                 System.out.println("Za mało!");
                 guess = getNumber(scanner);
