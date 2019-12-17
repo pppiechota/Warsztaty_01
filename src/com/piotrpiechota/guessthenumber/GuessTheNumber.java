@@ -10,9 +10,6 @@ public class GuessTheNumber {
         Random rand = new Random();
         int toGuess = rand.nextInt(100) + 1;
 
-//        Podgląd liczby:
-//        System.out.println(toGuess);
-
         int guess = getNumber(scanner);
         while (guess != toGuess) {
             if (guess < toGuess) {
